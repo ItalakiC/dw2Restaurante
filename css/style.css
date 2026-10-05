@@ -1,0 +1,31 @@
+/*tamanho das imagens*/
+.prato img { height: 180px; object-fit: cover; }
+.miniatura { width: 56px; height: 56px; object-fit: cover; }
+
+/*configurações da fonte*/
+body { font-family: 'Nunito', system-ui, sans-serif; }
+h1, h5, .card-title { font-family: 'Fraunces', Georgia, serif; font-weight: 600; }
+
+/*configs para empurrar o footer para o fim da página*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/*configs do rodapé*/
+footer {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 2px solid var(--bs-primary);
+    border-radius: 8px;
+    text-align: center;
+}
